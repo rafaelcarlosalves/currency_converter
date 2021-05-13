@@ -1,0 +1,18 @@
+<div>
+  <div class="conversor">
+    <h2>USD para BRL</h2>
+
+    <form [formGroup]="formulario" (ngSubmit)="Converter()">
+      <input
+        type="number"
+        min="0.01"
+        step="0.01"
+        placeholder="1,00"
+        formControlName="valor"
+      />
+      <button type="submit">Converter</button>
+    </form>
+
+    <h2>{{ valorConvertido }}</h2>
+  </div>
+</div>
